@@ -1,15 +1,11 @@
 Showdown's Target Blank Extension
 ==========================
 
-[![Build Status](https://travis-ci.org/cybercase/showdown-target-blank.svg)](https://travis-ci.org/cybercase/showdown-target-blank)
-
-------
-
 **Target Blank extension for [showdown](https://github.com/showdownjs/showdown)**
 
 Adds support for:
 
-    \[somelink\](https://some.url.com/some/path) -> <a target="_blank" href="..." >somelink</a>
+    [somelink](https://some.url.com/some/path) -> <a target="_blank" href="..." >somelink</a>
 
 ## Installation
 
