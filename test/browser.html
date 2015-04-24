@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Mocha Tests</title>
+  <link rel="stylesheet" href="../node_modules/mocha/mocha.css" />
+</head>
+<body>
+<div id="mocha">
+
+  <textarea id="test-basic-input2">Ping [Google](http://google.com) to find out more</textarea>
+  <div id="test-basic-expected2"><p>Ping <a target="_blank" href="http://google.com">Google</a> to find out more</p></div>
+
+</div>
+<script src="../node_modules/mocha/mocha.js"></script>
+<script src="../node_modules/chai/chai.js"></script>
+<script src="../node_modules/showdown/src/showdown.js"></script>
+<script src="../src/target_blank.js"></script>
+
+<script>
+  mocha.setup('bdd');
+  mocha.reporter('html');
+</script>
+
+<script>
+  var expect = chai.expect;
+
+  describe('Target blank extension test cases', function () {
+    var converter = new Showdown.converter({extensions: ['targetblank']});
+
+    it('should add target="_blank"', function () {
+      var input = 'Ping [Google](http://google.com) to find out more',
+          expected = '<p>Ping <a target="_blank" href="http://google.com">Google</a> to find out more</p>',
+          otp = converter.makeHtml(input);
+      expect(otp).to.equal(expected);
+    });
+  });
+</script>
+
+<script>
+  if (navigator.userAgent.indexOf('PhantomJS') < 0) {
+    mocha.run();
+  }
+</script>
+</body>
+</html>
