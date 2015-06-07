@@ -1,6 +1,6 @@
 {
   "name": "showdown-target-blank",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Target blank extension for showdown",
   "keywords": [
     "markdown",
@@ -26,22 +26,22 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "showdown": "0.x.x"
+    "showdown": "1.0.2"
   },
   "devDependencies": {
-    "chai": "^1.10.0",
+    "chai": "^3.0.0",
     "grunt": "^0.4.5",
     "grunt-cli": "^0.1.13",
-    "grunt-contrib-concat": "^0.5.0",
-    "grunt-contrib-jshint": "^0.10.0",
-    "grunt-contrib-uglify": "^0.7.0",
-    "grunt-conventional-changelog": "^1.1.0",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-jshint": "^0.11.2",
+    "grunt-contrib-uglify": "^0.9.1",
+    "grunt-conventional-changelog": "^1.2.2",
     "grunt-githooks": "^0.3.1",
-    "grunt-jscs": "^1.2.0",
-    "grunt-mocha": "^0.4.11",
+    "grunt-jscs": "^1.8.0",
+    "grunt-mocha": "^0.4.12",
     "grunt-simple-mocha": "^0.4.0",
-    "jscs": "^1.10.0",
-    "mocha": "^2.1.0",
-    "shelljs": "^0.3.0"
+    "jscs": "^1.13.1",
+    "mocha": "^2.2.5",
+    "shelljs": "^0.5.1"
   }
 }
