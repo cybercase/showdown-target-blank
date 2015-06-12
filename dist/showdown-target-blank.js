@@ -1,4 +1,4 @@
-/*! showdown-target-blank 24-04-2015 */
+/*! showdown-target-blank 11-06-2015 */
 //
 //  Target blank extension
 //  [somelink](https://some.url.com/some/path) -> <a target="_blank" href="..." >somelink</a>
@@ -28,5 +28,3 @@
   }
 
 }());
-
-//# sourceMappingURL=showdown-target-blank.js.map
