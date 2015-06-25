@@ -26,7 +26,7 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "showdown": "1.0.2"
+    "showdown": "1.1.0"
   },
   "devDependencies": {
     "chai": "^3.0.0",

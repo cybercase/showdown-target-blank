@@ -1,4 +1,4 @@
-/*! showdown-target-blank 07-06-2015 */
+/*! showdown-target-blank 25-06-2015 */
 //
 //  Target blank extension
 //  [somelink](https://some.url.com/some/path) -> <a target="_blank" href="..." >somelink</a>
@@ -10,6 +10,7 @@
    var targetblank = function () {
       return [
          {
+            type:   'output',
             regex: '<a(.*)a>',
             replace: function (match, content) {
                return '<a target="_blank"' + content + 'a>';
@@ -20,7 +21,7 @@
 
    // Client-side export
    if (typeof window !== 'undefined' && window.showdown && window.showdown.extensions) {
-      window.showdown.extensions.targetblank = targetblank;
+      window.showdown.extension("targetblank", targetblank);
    }
    // Server-side export
    if (typeof module !== 'undefined') {
