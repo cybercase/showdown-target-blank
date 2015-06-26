@@ -28,7 +28,7 @@ You can also [download the latest release zip or tarball](https://github.com/cyb
 
 After including the extension in your application, you just need to enable it in showdown.
 
-    var converter = new Showdown.converter({extensions: ['targetblank']});
+    var converter = new showdown.Converter({extensions: ['targetblank']});
 
 ## Example
 

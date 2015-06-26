@@ -14,7 +14,7 @@
 </div>
 <script src="../node_modules/mocha/mocha.js"></script>
 <script src="../node_modules/chai/chai.js"></script>
-<script src="../node_modules/showdown/src/showdown.js"></script>
+<script src="../node_modules/showdown/dist/showdown.js"></script>
 <script src="../src/target_blank.js"></script>
 
 <script>
@@ -26,7 +26,7 @@
   var expect = chai.expect;
 
   describe('Target blank extension test cases', function () {
-    var converter = new Showdown.converter({extensions: ['targetblank']});
+    var converter = new showdown.Converter({extensions: ['targetblank']});
 
     it('should add target="_blank"', function () {
       var input = 'Ping [Google](http://google.com) to find out more',
