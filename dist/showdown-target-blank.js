@@ -1,4 +1,4 @@
-/*! showdown-target-blank 26-06-2015 */
+/*! showdown-target-blank 02-11-2015 */
 //
 //  Target blank extension
 //  [somelink](https://some.url.com/some/path) -> <a target="_blank" href="..." >somelink</a>
@@ -11,9 +11,9 @@
       return [
          {
             type:   'output',
-            regex: '<a(.*)a>',
+            regex: '<a(.*?)>',
             replace: function (match, content) {
-               return '<a target="_blank"' + content + 'a>';
+               return '<a target="_blank"' + content + '>';
             }
          }
       ];

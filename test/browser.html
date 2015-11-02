@@ -29,8 +29,8 @@
     var converter = new showdown.Converter({extensions: ['targetblank']});
 
     it('should add target="_blank"', function () {
-      var input = 'Ping [Google](http://google.com) to find out more',
-          expected = '<p>Ping <a target="_blank" href="http://google.com">Google</a> to find out more</p>',
+      var input = 'Link to [Google](http://google.com) and [Yahoo](http://yahoo.com)',
+          expected = '<p>Link to <a target="_blank" href="http://google.com">Google</a> and <a target="_blank" href="http://yahoo.com">Yahoo</a></p>',
           otp = converter.makeHtml(input);
       expect(otp).to.equal(expected);
     });
