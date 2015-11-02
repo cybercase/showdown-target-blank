@@ -1,6 +1,6 @@
 {
   "name": "showdown-target-blank",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Add target=\"_blank\" to markdown link",
   "homepage": "https://github.com/cybercase/showdown-target-blank",
   "license": "BSD",
