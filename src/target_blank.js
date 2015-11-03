@@ -10,9 +10,9 @@
       return [
          {
             type:   'output',
-            regex: '<a(.*)a>',
+            regex: '<a(.*?)>',
             replace: function (match, content) {
-               return '<a target="_blank"' + content + 'a>';
+               return '<a target="_blank"' + content + '>';
             }
          }
       ];
