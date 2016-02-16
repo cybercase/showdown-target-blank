@@ -22,7 +22,6 @@
   },
   "main": "./dist/showdown-target-blank.js",
   "scripts": {
-    "postinstall": "grunt githooks",
     "test": "grunt test"
   },
   "dependencies": {
