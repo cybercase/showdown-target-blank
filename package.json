@@ -1,6 +1,6 @@
 {
   "name": "showdown-target-blank",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Target blank extension for showdown",
   "keywords": [
     "markdown",
@@ -22,7 +22,6 @@
   },
   "main": "./dist/showdown-target-blank.js",
   "scripts": {
-    "postinstall": "grunt githooks",
     "test": "grunt test"
   },
   "dependencies": {
