@@ -12,7 +12,7 @@
             type:   'output',
             regex: '<a(.*?)>',
             replace: function (match, content) {
-               return '<a target="_blank"' + content + '>';
+               return content.indexOf('mailto:') !== -1 ? '<a' + content + '>' : '<a target="_blank"' + content + '>';
             }
          }
       ];

@@ -34,6 +34,13 @@
           otp = converter.makeHtml(input);
       expect(otp).to.equal(expected);
     });
+
+    it('should not add target="_blank"', function () {
+      var input = 'Mail to [Google](mailto:user@google.com) and [Yahoo](mailto:user@yahoo.com)',
+          expected = '<p>Mail to <a href="mailto:user@google.com">Google</a> and <a href="mailto:user@yahoo.com">Yahoo</a></p>',
+          otp = converter.makeHtml(input);
+      expect(otp).to.equal(expected);
+    });
   });
 </script>
 
